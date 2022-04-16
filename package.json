@@ -1,11 +1,11 @@
 {
-  "name": "v4",
+  "name": "tareqeee15",
   "description": "Personal Website V4",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Md. Tariqul Islam <tareqeee15@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/tareqeee15/tareqeee15.github.io"
   },
   "keywords": [
     "gatsby"
