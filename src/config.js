@@ -1,26 +1,37 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
-
+  siteTitle: 'Md. Tariqul Islam | Machine Learning Engineer | Researcher',
+  siteDescription:
+    'Md. Tariqul Islam is a full-time Machine Learning Engineer at Hishab Ltd. who earned his bachelor\'s degree from Bangladesh University of Engineering and Technology. He is now a part-time Master\'s student at the same university doing research on speech processing. He has a wonderful academic career, having published 5 research papers so far in a short period of time, including a journal paper which was published by EURASIP. He competed in several national and international contests and was recognized for his efforts. After visiting ICIP 2019, Taiwan, as a finalist in the international competition VIP CUP 2019, the desire to build a career in research in the field of Signal processing and Machine Learning has increased.',
+  siteKeywords:
+    'Md. Tariqul Islam, Tariqul, Islam, tisbuet, hishab, Machine Learning Engineer, Researcher',
+  siteUrl: 'https://tisbuet.github.io/',
+  siteLanguage: 'en_US',
+  googleAnalyticsID: 'UA-45666519-2',
+  googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
+  name: 'Md. Tariqul Islam',
+  location: 'Chattogram, Bangladesh',
+  email: 'tisbuet@gmail.com',
+  github: 'https://github.com/tisbuet',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://github.com/tisbuet',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/tisbuet/',
     },
     {
       name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
+      url: 'https://codepen.io/chandrikadeb7',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/chandrikadeb7',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://twitter.com/chandrikadeb7',
     },
   ],
 
@@ -34,7 +45,15 @@ module.exports = {
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Awards',
+      url: '/#awards',
+    },
+    {
+      name: 'Publications',
+      url: '/#publications',
+    },
+    {
+      name: 'Projects',
       url: '/#projects',
     },
     {
@@ -43,13 +62,15 @@ module.exports = {
     },
   ],
 
+  navHeight: 80,
+
   colors: {
     green: '#64ffda',
     navy: '#0a192f',
     darkNavy: '#020c1b',
   },
 
-  srConfig: (delay = 200, viewFactor = 0.25) => ({
+  srConfig: (delay = 150) => ({
     origin: 'bottom',
     distance: '20px',
     duration: 500,
@@ -61,7 +82,7 @@ module.exports = {
     mobile: true,
     reset: false,
     useDelay: 'always',
-    viewFactor,
+    viewFactor: 0.25,
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 },
   }),
 };
