@@ -28,6 +28,7 @@ const theme = {
   fontSizes: {
     xs: '9px',
     smish: '10px',
+    sml: '13px',
     sm: '14px',
     md: '16px',
     lg: '18px',
@@ -37,14 +38,14 @@ const theme = {
   },
 
   easing: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
-  transition: 'all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1)',
+  transition: 'all 0.20s cubic-bezier(0.645, 0.045, 0.355, 1)',
 
   borderRadius: '3px',
   navHeight: '100px',
   navScrollHeight: '70px',
   margin: '20px',
 
-  tabHeight: 42,
+  tabHeight: 50,
   tabWidth: 120,
   radius: 3,
 

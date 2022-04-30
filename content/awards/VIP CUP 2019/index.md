@@ -2,7 +2,7 @@
 date: '3'
 title: '2nd at IEEE VIP CUP 2019'
 location: 'ICIP 2019, TAIWAN'
-cover: 'IMG_8889.JPG'
+cover: 'cover_photo.jpg'
 external: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9084324'
 tech:
   - OpenCV

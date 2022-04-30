@@ -45,7 +45,7 @@ const StyledProjectName = styled.h5`
 const StyledDescription = styled.div`
   ${mixins.boxShadow};
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding: 30px;
   background-color: ${colors.lightNavy};
   color: ${colors.lightSlate};

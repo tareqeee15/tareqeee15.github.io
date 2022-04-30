@@ -13,6 +13,7 @@ const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
   align-items: flex-start;
+  padding: 2rem 1.75rem;
 `;
 const StyledTitle = styled.h4`
   margin: 0 auto;
@@ -25,23 +26,24 @@ const StyledTitle = styled.h4`
 const StyledArchiveLink = styled(Link)`
   ${mixins.inlineLink};
   text-align: center;
-  margin: 0 auto;
+  border: 2px solid green;
+  margin: 20px auto;
   font-family: ${fonts.SFMono};
-  font-size: ${fontSizes.sm};
+  font-size: 16px;
   &:after {
     bottom: 0.1em;
   }
 `;
 const StyledGrid = styled.div`
-  margin-top: 50px;
-  margin-left: 10%;
+  margin-top: 30px;
+  margin-left: 0%;
 
   .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 6px;
     position: relative;
-    ${media.desktop`grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));`};
+    ${media.desktop`grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));`};
   }
 `;
 const StyledProjectInner = styled.div`
@@ -145,11 +147,9 @@ const Projects = ({ data }) => {
   const projectsToShow = showMore ? projects : firstSix;
 
   return (
-    <StyledContainer>
+    <StyledContainer id="projects">
       <StyledTitle ref={revealTitle}>Other Noteworthy Projects</StyledTitle>
-      <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
-        View Complete List of Projects/Codes
-      </StyledArchiveLink>
+      
 
       <StyledGrid>
         <TransitionGroup className="projects">
@@ -216,6 +216,9 @@ const Projects = ({ data }) => {
             })}
         </TransitionGroup>
       </StyledGrid>
+      <StyledArchiveLink to="/archive" ref={revealArchiveLink}>
+        View Complete List of Projects
+      </StyledArchiveLink>
     </StyledContainer>
   );
 };
