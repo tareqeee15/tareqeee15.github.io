@@ -21,18 +21,6 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/tisbuet/',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/chandrikadeb7',
-    },
-    {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/chandrikadeb7',
-    },
-    {
-      name: 'Twitter',
-      url: 'https://twitter.com/chandrikadeb7',
-    },
   ],
 
   navLinks: [

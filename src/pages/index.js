@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Awards, Jobs, Featured, Projects, Contact } from '@components';
+import { Layout, Hero, About, Awards, Publications, Jobs, Featured, Projects, Contact } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -16,6 +16,7 @@ const IndexPage = ({ location, data }) => (
       <About data={data.about.edges} />
       <Jobs data={data.jobs.edges} />
       <Awards data={data.awards.edges} />
+      <Publications data={data.publications.edges} />
       <Projects data={data.projects.edges} />
       <Contact data={data.contact.edges} />
     </StyledMainContainer>
@@ -86,6 +87,30 @@ export const pageQuery = graphql`
         }
       }
     }
+    publications: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/publications/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            location
+            cover {
+              childImageSharp {
+                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
+              }
+            }
+            tech
+            github
+            external
+          }
+          html
+        }
+      }
+    }
     jobs: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/jobs/" } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -97,29 +122,6 @@ export const pageQuery = graphql`
             company
             range
             url
-          }
-          html
-        }
-      }
-    }
-    featured: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/featured/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 700, quality: 90, traceSVG: { color: "#64ffda" }) {
-                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                }
-              }
-            }
-            tech
-            github
-            external
           }
           html
         }

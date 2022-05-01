@@ -216,7 +216,9 @@ const Awards = ({ data }) => {
 
   return (
     <StyledContainer id="awards">
-      <Heading ref={revealTitle}>International Competitions and Achievements</Heading>
+      <Heading ref={revealTitle}>
+        International Competitions and Achievements
+      </Heading>
 
       <div>
         {awardsProjects &&

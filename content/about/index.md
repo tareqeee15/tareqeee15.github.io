@@ -4,7 +4,7 @@ avatar: 'pro-pic.jpg'
 skills:
   - Python
   - NLP
-  - C
+  - Github
   - Computer Vision
   - Linux
   - Rasa
