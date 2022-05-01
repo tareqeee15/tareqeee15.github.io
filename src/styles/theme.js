@@ -28,6 +28,7 @@ const theme = {
   fontSizes: {
     xs: '9px',
     smish: '10px',
+    smi: '12px',
     sml: '13px',
     sm: '14px',
     md: '16px',

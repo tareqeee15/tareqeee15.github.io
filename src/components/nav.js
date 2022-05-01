@@ -141,7 +141,7 @@ const StyledList = styled.ol`
 const StyledListItem = styled.li`
   margin: 0 10px;
   position: relative;
-  font-size: ${fontSizes.smish};
+  font-size: ${fontSizes.smi};
   counter-increment: item 1;
   &:before {
     content: '0' counter(item) '.';
@@ -156,7 +156,7 @@ const StyledListLink = styled(Link)`
 const StyledResumeButton = styled.a`
   ${mixins.smallButton};
   margin-left: 10px;
-  font-size: ${fontSizes.smish};
+  font-size: ${fontSizes.smi};
 `;
 
 const DELTA = 5;

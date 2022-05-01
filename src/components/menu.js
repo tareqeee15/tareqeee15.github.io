@@ -73,12 +73,6 @@ const NavLink = styled(Link)`
   padding: 3px 20px 20px;
   width: 100%;
 `;
-const ResumeLink = styled.a`
-  ${mixins.bigButton};
-  padding: 18px 50px;
-  margin: 10% auto 0;
-  width: max-content;
-`;
 
 const Menu = ({ menuOpen, toggleMenu }) => {
   const handleMenuClick = e => {
@@ -107,9 +101,6 @@ const Menu = ({ menuOpen, toggleMenu }) => {
                 </NavListItem>
               ))}
           </NavList>
-          <ResumeLink href="https://drive.google.com/file/d/1efDl-nEZphM68Xvtj7R4K3m9qYAJDeM5/view?usp=sharing" target="_blank" rel="nofollow noopener noreferrer">
-            Resume
-          </ResumeLink>
         </NavLinks>
       </Sidebar>
     </StyledContainer>
